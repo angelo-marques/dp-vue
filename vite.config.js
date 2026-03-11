@@ -2,10 +2,11 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import { fileURLToPath, URL } from 'node:url'
 
+const isGithubPagesBuild = process.env.GITHUB_ACTIONS === 'true'
+
 export default defineConfig({
-  // ⚠️ Altere 'design-patterns' para o nome exato do seu repositório no GitHub
-  // Ex: se o repo for github.com/angelo-marques/design-patterns → base: '/design-patterns/'
-  base: process.env.NODE_ENV === 'production' ? '/angelo-marques.github.io/dp-vue/' : '/',
+  // Em produção local/Vercel usa '/', no GitHub Pages usa '/dp-vue/'
+  base: isGithubPagesBuild ? '/dp-vue/' : '/',
 
   plugins: [vue()],
   resolve: {
