@@ -33,7 +33,7 @@
 
         <div class="hero-card">
           <div class="profile-card">
-            <div class="profile-avatar">AS</div>
+            <div class="backgroundBindClass" style="margin-left:  0px;"></div>
             <div>
               <div class="profile-name">Angelo Marques de Oliveira Silva</div>
               <div class="profile-role">Tech Lead · FullStack · .NET 8/9/10 · AI Dev</div>
@@ -110,7 +110,9 @@
       <div class="container about-inner">
         <div class="about-sticky">
           <div class="about-card">
-            <div class="about-avatar">AS</div>
+          <div class="backgroundBindClass"></div>
+            
+         
             <h3>Angelo Marques<br>de Oliveira Silva</h3>
             <p class="about-location">📍 Serra, ES — Brasil</p>
             <a href="https://www.linkedin.com/in/angelomarquesdeoliveirasilva" target="_blank" class="btn-linkedin">
