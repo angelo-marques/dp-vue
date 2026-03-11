@@ -40,15 +40,13 @@ npm run build
 
 ### GitHub Pages (via Actions)
 ```bash
-# Em vite.config.js, adicione:
-# base: '/nome-do-repo/'
-npm run build
-# Faça deploy de dist/ na branch gh-pages
+# O workflow .github/workflows/deploy-pages.yml já faz build + deploy automático
+# ao dar push na branch main/master.
 ```
 
 ### Vercel
 ```bash
-npm i -g vercel
+# Projeto pronto para SPA (vercel.json com rewrite para index.html)
 vercel --prod
 ```
 
